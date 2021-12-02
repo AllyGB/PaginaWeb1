@@ -1,0 +1,78 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-boxs;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    align-items: center;
+}
+
+.container-Ingreso {
+    background-color: white;
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+/* Iconos */
+
+.login-text {
+    font-size: 20px;
+}
+
+.fa-circle {
+    color: black;
+}
+
+.candado {
+    color: white;
+}
+
+
+/* Configuración del imput */
+
+input {
+    padding: 10px 0px 10px 5px;
+    border: none;
+    border-bottom: 1px solid #757562;
+    background-color: transparent;
+    font-size: 20px;
+    color: black;
+}
+
+input:focus {
+    background-color: black;
+    border: none;
+    transition: 250ms background ease-in;
+    color: white;
+}
+
+
+/* Margenes de los input */
+
+#txtUsuario {
+    margin: 30px 0px 30px 0px;
+}
+
+#txtPass {
+    margin: 0px 0px 30px 0px;
+}
+
+
+/* Boton login */
+
+#btnLogin-Ingreso {
+    padding: 3px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+#btnLogin-Ingreso:hover {
+    transition: 250ms background ease-in;
+    background-color: black;
+    color: white;
+}

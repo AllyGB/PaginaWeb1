@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unfearless</title>
+    <title>Login</title>
 
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../style/ingreso.css">
     <!-- CSS -->
     <link rel="stylesheet" href="/src/style/style.css">
 
@@ -26,8 +29,15 @@
     <!--Zen antique-->
     <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
 
+    <!-- Javascript ingreso -->
+    <script src="/src/js/ingreso.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
 
 </head>
 
@@ -38,7 +48,7 @@
         <header class="header">
             <nav class="nav-header">
                 <img src="/src/assets/img/UnfearlessLogo.png" alt="" id="nav-header-img">
-                <a href="#">Inicio</a>
+                <a href="/src/html/index.html">Inicio</a>
                 <a href="#">Productos</a>
                 <a href="/src/html/Nosotros.html">Nosotros</a>
                 <a href="/src/html/ingreso.html" id="nav-header-contactenos">Login</a>
@@ -46,23 +56,25 @@
         </header>
     </div>
 
-
-    <!-- Info  -->
-    <div class="container-info">
-        <section class="info">
-            <div class="text-info">
-                <div class="contenedor-text-info">
-                    <h1 id="h1-text-info">Unfearless</h1>
-                    <p id="p-text-info">Somos una compañía que aspira a ser la número en venta de dispositivos dedicados al gaming, también aspiramos a ser el clan más grande de e-sport de Costa Rica.</p>
-                    <a href="/src/html/Nosotros.html" id="btn-text-info">Sobre nosotros</a>
-                </div>
-            </div>
-        </section>
-
+    <!-- Ingreso -->
+    <div class="container-Ingreso">
+        <p class="login-text">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-lock fa-stack-1x candado"></i>
+            </span>
+        </p>
+        <label for="txtUsuario"></label>
+        <input type="text" id="txtUsuario" placeholder="Usuario...">
+        <br>
+        <label for="txtPass"></label>
+        <input type="text" id="txtPass" placeholder="Contraseña...">
+        <br>
+        <button onclick="IniciarSesion()" id="btnLogin-Ingreso">Login</button>
+        <div class="underlay-photo"></div>
+        <div class="underlay-black"></div>
     </div>
 
-
-    <!-- Footer -->
     <div class="container-footer">
         <div class="Footer">
             <div class="icons-footer">
@@ -81,6 +93,8 @@
             </div>
         </div>
     </div>
+
+
 
 </body>
 
